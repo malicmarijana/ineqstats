@@ -19,10 +19,12 @@ lorenz_curve <- function(x) {
     share = c(0, L)
   )
 
-  ggplot(df, aes(x = population, y = share)) +
-    geom_line(color = "blue") +
-    geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
-    labs(title = "Lorenz Curve",
-         x = "Cumulative Population Share",
-         y = "Cumulative Income Share")
+  ggplot2::ggplot(df, ggplot2::aes(x = population, y = share)) +
+    ggplot2::geom_line(color = "blue") +
+    ggplot2::geom_abline(slope = 1, intercept = 0, linetype = "dashed") +
+    ggplot2::labs(
+      title = "Lorenz Curve",
+      x = "Cumulative Population Share",
+      y = "Cumulative Income Share"
+    )
 }
