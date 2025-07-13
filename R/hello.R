@@ -30,3 +30,10 @@ usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
 devtools::document()
 
 devtools::document(roclets = c("namespace", "rd"))
+
+usethis::use_git_remote("origin", url = NULL, overwrite = TRUE)
+system("git remote -v")
+
+usethis::use_git_remote("origin", url = "https://github.com/malicmarijana/ineqstats.git", overwrite = TRUE)
+
+devtools::document()
