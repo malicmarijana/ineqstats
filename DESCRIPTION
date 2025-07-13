@@ -1,17 +1,16 @@
 Package: ineqstats
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Simple Inequality Statistics
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Marijana", "Malic",
+      email = "malic.marijana@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Tools to compute inequality measures like the Gini coefficient and Lorenz curve.
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
